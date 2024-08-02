@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link href="./css/matrix.css" rel="stylesheet">
+    <link rel="icon" href="./img/ico_grid.svg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <img loading="lazy" class="background1" src="https://cdn.shopify.com/s/files/1/0249/4283/7837/files/tr__grid-bg-desk.png?v=1710148210" alt="background-image" width="2880" height="1708">
+        <img loading="lazy" class="background2" src="./img/Section2-gr-t-desk.svg" alt="background-image">
+        <img loading="lazy" class="background3" src="./img/Section2-gr-b-desk.svg" alt="background-image">
+        <h1 class="title"> Matrix CalCulator</h1>
+        <div class="topArea">
+            <div class="leftArea">
+                <div class="inputArea">
+                    <div class="top">
+                        <input id="input01" class="input_left" type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-9]/g, '')">
+                        <span class="ico_multiply">
+                            <i class="xi-close"></i>
+                        </span>
+                        <input id="input02" class="input_right" type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-9]/g, '')">
+                        <button id="btnPrint01" class="btn_print">PRINT</button>
+                    </div>
+                    <div class="bottom">
+                        <button id="btnRandom01" class="btn_random">RANDOM</button>
+                        <button id="btnReset01" class="btn_reset">RESET</button>
+                    </div>
+                </div>
+                <div id="matrix01" class="matrixArea">
+                    
+                </div>
+            </div>
+            <div class="rightArea">
+                <div class="inputArea">
+                    <div class="top">
+                        <input id="input03" class="input_left" type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-9]/g, '')">
+                        <span class="ico_multiply">
+                            <i class="xi-close"></i>
+                        </span>
+                        <input id="input04" class="input_right" type="text" maxlength="1" oninput="this.value = this.value.replace(/[^1-9]/g, '')">
+                        <button id="btnPrint02" class="btn_print">PRINT</button>
+                    </div>
+                    <div class="bottom">
+                        <button id="btnRandom02" class="btn_random">RANDOM</button>
+                        <button id="btnReset02" class="btn_reset">RESET</button>
+                    </div>
+                </div>
+                <div id ="matrix02" class="matrixArea"></div>
+            </div>
+        </div>
+        <div class="bottomArea">
+            <div class="btnArea">
+                <button id="btnP" class="btn_p"><i id="icoP" class="xi-plus xi-2x"></i></button>
+                <button id="btnM" class="btn_m"><i id="icoM" class="xi-minus xi-2x"></i></button>
+                <button id="btnX" class="btn_x"><i id="icoX" class="xi-close xi-2x"></i></button>
+            </div>
+            <div id="matrix03" class="matrixArea"></div>
+        </div>
+        <div id="messageBox" class="messageBox">
+            <p>왼쪽 메트릭스의 행열과<br>오른쪽 메트릭스의 행열을<br>일치시키세요!</p>
+            <button id="btnClose" class="btn_close">CLOSE</button>
+        </div>
+    </div>
+
+    <script src="./js/matrix.js"></script>
+</body>
+</html>
